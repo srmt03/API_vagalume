@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+    <title>Project Music - API Vagalume</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+      
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+      
+    <!-- Vendor CSS Files -->
+    <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/5f2b9e6a48.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.vagalume.com.br/" target="blank"><img src="./assets/img/img-vagalume-claro.png" alt="logo"></a>
+        </div>
+
+        <div class="pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="buscar" type="text" id="busca" placeholder="O que você gostaria de ouvir?">
+        </div>
+
+        <div class="sair">
+            <a href="https://www.google.com.br" target="blank"><span>SAIR</span></a>
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="music-container">
+            <div class="player">
+                <!-- Define the section for displaying details -->
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-artist">Track Artist</div>
+                </div>
+             
+                <!-- Define the section for displaying track buttons -->
+                <div class="buttons">
+                  <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                  </div>
+                  <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                  </div>
+                  <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                  </div>
+                </div>
+             
+                <!-- Define the section for displaying the seek slider-->
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">00:00</div>
+                </div>
+             
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100"
+                    value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-artista">
+            #Vai aparecer informacao do artista com as musicas mais populares#
+        </div>
+        <div class="card-artista">
+            #Vai aparecer informacao do artista com as musicas mais populares#
+        </div>
+        <div class="card-artista">
+            #Vai aparecer informacao do artista com as musicas mais populares#
+        </div>
+        <div class="card-artista">
+            #Vai aparecer informacao do artista com as musicas mais populares#
+        </div>
+        
+        
+    </main>
+    <footer>
+        Developer by Samuel Matos | Nicolas Dobbeck | Leonardo Guidorizzi
+    </footer>
+</body>
+</html>
