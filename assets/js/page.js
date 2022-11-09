@@ -32,14 +32,10 @@ const criarCards = (indice) => {
 
     cardsContainer.appendChild(cards);
 
-    // cards.addEventListener('click', (elemento) => {
-    //     elemento.preventDefault();
-    //     let linkHotspot = cards.link;
-
-    //     localStorage.setItem('informacoes', linkHotspot);
-
-    //     location.href = '../index.html';
-    // });
+    cards.addEventListener('click', (elemento) => {
+        elemento.preventDefault();
+        location.href = hotspots.link;
+    });
 }
 
 hotspots.forEach(criarCards)
