@@ -88,6 +88,7 @@ main {
     width: 100%;
     gap: 24px;
     padding: 0 65px;
+    margin-top: 32px;
 
 }
 
@@ -98,13 +99,14 @@ main {
 }
 
 .player {
-    height: 700px;
+    height: 800px;
     width: 50vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+    gap: 10px;
     background: rgba(7, 6, 6, 0.44);
 }
 
@@ -230,12 +232,6 @@ i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward {
     cursor: pointer;
-}
-
-.card-play {
-    width: 100%;
-    height: 400px;
-    background-color: #8f4ae7;
 }
 
 .card-artista {
