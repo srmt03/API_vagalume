@@ -34,7 +34,7 @@ const criarCards = (indice) => {
 
     cards.addEventListener('click', (elemento) => {
         elemento.preventDefault();
-        location.href = hotspots.link;
+        location.href = indice.link;
     });
 }
 
